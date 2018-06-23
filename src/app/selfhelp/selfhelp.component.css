@@ -1,0 +1,12 @@
+
+.wrapper
+{
+    margin:0 auto;
+    display: block;
+    max-width: 400px;
+}
+.btn
+{
+    margin: 2% auto;
+    display: block;
+}
