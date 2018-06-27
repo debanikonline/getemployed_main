@@ -3,29 +3,33 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
-import { AuthService } from './auth.service';
-import { FormsModule } from '@angular/forms';
+import { LandingComponent } from './landing/landing.component';
 import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
+import { AuthService } from './auth.service';
 import { HttpClientModule } from '@angular/common/http';
-import { SelfhelpComponent } from './selfhelp/selfhelp.component';
-import { NgxSpinnerModule } from 'ngx-spinner';
+import { SendEmailComponent } from './send-email/send-email.component';
 
 const rout=[{
-path:"",
-component:SelfhelpComponent
-}];
+  path:"",
+  component:LandingComponent
+},
+{
+  path:"email",
+  component:SendEmailComponent
+}]
 
 @NgModule({
   declarations: [
     AppComponent,
-    SelfhelpComponent
+    LandingComponent,
+    SendEmailComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule,
-    HttpClientModule,
-    NgxSpinnerModule,
     RouterModule.forRoot(rout),
+    FormsModule,
+    HttpClientModule
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]

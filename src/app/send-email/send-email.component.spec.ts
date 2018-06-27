@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SelfhelpComponent } from './selfhelp.component';
+import { SendEmailComponent } from './send-email.component';
 
-describe('SelfhelpComponent', () => {
-  let component: SelfhelpComponent;
-  let fixture: ComponentFixture<SelfhelpComponent>;
+describe('SendEmailComponent', () => {
+  let component: SendEmailComponent;
+  let fixture: ComponentFixture<SendEmailComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SelfhelpComponent ]
+      declarations: [ SendEmailComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SelfhelpComponent);
+    fixture = TestBed.createComponent(SendEmailComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

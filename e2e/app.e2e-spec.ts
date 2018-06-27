@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('getemployed App', () => {
+describe('rest-angular App', () => {
   let page: AppPage;
 
   beforeEach(() => {

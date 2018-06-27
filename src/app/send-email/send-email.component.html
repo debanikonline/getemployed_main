@@ -1,0 +1,6 @@
+<form name='sendemail' #formref='ngForm' (ngSubmit)='sendemail(formref.value)'>
+  <input type="text" name="name" id="name" placeholder='name' ngModel>
+  <input type="text" name="email" id="email" placeholder='email' ngModel>
+  <input type="text" name="link" id="link" placeholder='link' ngModel>
+  <button type="submit">Request</button>
+</form>
